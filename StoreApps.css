@@ -1,0 +1,174 @@
+body{
+    background: cornsilk;
+}
+
+#siteBody{
+    display: grid;
+    grid-template-columns: 14.5% 1fr;
+    grid-template-areas:
+      "advert header"
+      "content content";
+
+}
+nav{
+    float: right;
+    margin-top: 30px;
+
+
+
+}
+
+#navBar{
+    margin-right: 2px;
+}
+
+.navi{
+    margin-left: 20px;
+    color: white;
+    font-size: .75em;
+    font-weight: bolder;
+}
+
+.image{
+    height: 70px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.text-head{
+    font-size: 2em;
+    color: white;
+
+}
+
+#heads{
+    background: rgba(0, 42, 44, 0.80);
+
+}
+
+#items{
+    grid-area: header;
+}
+
+#bodyNavBarSide{
+    grid-area: advert;
+    background: rgba(0,0,255,0.3);
+    height: 400px;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+}
+
+#sidePage{
+    grid-area: content ;
+}
+
+#advertisement{
+    grid-area: footer;
+}
+
+#midColor{
+    display:block;
+    border:none;
+    color:white;
+    height:10px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
+
+#lukHir{
+    height: 10px;
+    width: 300px;
+
+}
+
+#searchBar{
+    text-align: center;
+}
+form{
+    text-align: right;
+}
+
+#submit{
+    height: 20px;
+    width: 90px;
+    border-radius: 25%;
+    background: rgba(0,0,255,0.3) ;
+}
+
+.slideShow{
+    /*text-align: center;*/
+    font-size: 1em;
+    background:#212121;
+
+
+}
+
+#bodyNavBarSide{
+
+}
+
+
+.mySlides{
+    width: 100%;
+    height: 300px;
+
+
+
+}
+
+.subHead{
+    text-align: center;
+
+}
+
+.slideImage{
+    margin: auto;
+    border: 2px solid transparent;
+    width: 1000px;
+
+}
+
+.popItem{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+
+
+
+
+}
+.firstRowItems{
+    display: grid;
+    grid-template-columns: repeat(4, 25%) ;
+    margin-left: 100px;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    form, #bodyNavBarSide, .slideShow, .subHead{
+        display: none;
+
+    }
+
+    .navi{
+        color: black;
+        font-weight: bold ;
+        float: left;
+        margin-left: 5px;
+
+
+}
+    #navBar{
+        text-align: center;
+    }
+    
+}

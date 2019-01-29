@@ -1,0 +1,72 @@
+.container-fluid{
+    background: lightgray;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+       "advert header"
+       "advert content"
+       "advert footer";
+}
+
+.item-1{
+    grid-area: header;
+
+
+}
+
+.item-2{
+    grid-area: advert;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+    grid-template-rows: repeat(6, 40px);
+    font-size: 20px;
+    height: 100%;
+    position: fixed;
+    width: 19.5%;
+
+}
+
+.item-3{
+    grid-area: content;
+}
+
+.item-4{
+    grid-area: footer;
+}
+
+.midLine{
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
+
+header, #sub-head1, #sub-head2, #player, #head, #sub-head3, .item-2, #secHead{
+    text-align: center;
+}
+
+header>h1{
+    background:blue;
+}
+
+video{
+    margin-left: 20px;
+}
+
+#nextPage{
+    background: darkkhaki;
+    width: 100%;
+    height: 500px;
+}
+
+.midLine2{
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
